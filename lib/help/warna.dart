@@ -5,6 +5,8 @@ class Warna {
   static const Color primary = Color(0xffFFFFFF);
   static const Color grey = Color(0xff626262);
   static const Color greymuda = Color(0xffEAECED);
+  static const Color green = Color(0xffD6EFED9C);
+  static const Color greydark = Color(0xffDEDEDE);
 }
 
 class Divices {

@@ -40,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
             style: TextStyle(
                 color: Warna.primary,
                 fontWeight: FontWeight.bold,
+                fontFamily: "gayafont",
                 fontSize: 40),
           ),
           Padding(
@@ -47,7 +48,10 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
               child: const Text(
                 "We sell furniture, chairs, tables, sofas and other sales with digital integration that makes it easier for you to find the items you like. We optimize user frequency so that users feel comfortable in this application.",
-                style: TextStyle(color: Warna.grey),
+                style: TextStyle(
+                  color: Warna.grey,
+                  fontFamily: "gayafont",
+                ),
                 textAlign: TextAlign.center,
               ),
             ),
