@@ -19,7 +19,7 @@ class Cart extends StatelessWidget {
                   child: Lottie.asset("assets/lottie/kosong.json",
                       height: Divices.height(context) * 0.5),
                 ),
-                Expanded(
+                const Expanded(
                   child: Text(
                     "Keranjang Kosong",
                     style: TextStyle(

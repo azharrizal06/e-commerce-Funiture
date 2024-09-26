@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:furniture/help/warna.dart';
 import 'package:furniture/screan/cart.dart';
 import 'package:furniture/screan/home.dart';
+import 'package:furniture/screan/kategori.dart';
 import 'package:furniture/screan/profil.dart';
 
 class Dhasbroad extends StatefulWidget {
@@ -12,12 +13,7 @@ class Dhasbroad extends StatefulWidget {
 class _DhasbroadState extends State<Dhasbroad> with TickerProviderStateMixin {
   int _selectedTab = 0;
 
-  final List<Widget> _pages = [
-    Home(),
-    Center(child: Text('Dashboard')),
-    Cart(),
-    ProfilePage()
-  ];
+  final List<Widget> _pages = [Home(), Kategori(), Cart(), ProfilePage()];
 
   void _handleIndexChanged(int index) {
     setState(() {

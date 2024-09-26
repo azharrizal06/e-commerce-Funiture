@@ -9,11 +9,11 @@ class CradProduk extends StatelessWidget {
   CradProduk({
     super.key,
     this.color,
-    required this.produk,
+    this.produk,
   });
 
   final Color? color;
-  ProductModel produk;
+  ProductModel? produk;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class CradProduk extends StatelessWidget {
             context,
             MaterialPageRoute(
                 builder: (context) => Detail(
-                      produk: produk,
+                      produk: produk!,
                     )));
       },
       child: Container(
@@ -53,13 +53,13 @@ class CradProduk extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(30),
-                    child: Image.asset("${produk.gambar}"),
+                    child: Image.asset("${produk?.gambar}"),
                   ),
                 ],
               ),
             ),
             Text(
-              "${produk.namaProduk}",
+              "${produk?.namaProduk}",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
@@ -67,7 +67,7 @@ class CradProduk extends StatelessWidget {
               ),
             ),
             Text(
-              " \$ ${produk.harga}",
+              " \$ ${produk?.harga}",
               style: TextStyle(
                 fontSize: 15,
                 fontFamily: "roboto",

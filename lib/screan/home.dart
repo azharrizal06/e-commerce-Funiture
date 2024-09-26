@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
             style: TextStyle(
               fontSize: 35,
               fontWeight: FontWeight.bold,
-              fontFamily: "roboto",
+              fontFamily: "gayafont",
             ),
           ),
           SpacingHeight(fraction: 0.02),
